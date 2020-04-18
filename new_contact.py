@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
-import unittest, time, re
+import unittest
 
 class NewContact(unittest.TestCase):
     def setUp(self):
@@ -35,9 +33,6 @@ class NewContact(unittest.TestCase):
         wd.find_element_by_name("nickname").click()
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys("aleksalla")
-        wd.find_element_by_name("photo").click()
-        wd.find_element_by_name("photo").clear()
-        wd.find_element_by_name("photo").send_keys("C:\\fakepath\\JOIN.jpg")
         wd.find_element_by_name("title").click()
         wd.find_element_by_name("title").clear()
         wd.find_element_by_name("title").send_keys("Title")
