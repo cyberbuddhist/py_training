@@ -29,6 +29,8 @@ class NewContact(unittest.TestCase):
                             address="", hometel="", mobile="", worktel="",
                             email="", email2="", homepage="", bday="", bmonth="", byear="", annyversaryday="",
                             amonth="", ayear="", address2="", notes="")
+        if (bday="") then wd.find_element_by_name("bday").clear()
+        if (bmonth="") then wd.find_element_by_name("bmonth").clear()
         self.return_to_homepage(wd)
         self.logout(wd)
 
